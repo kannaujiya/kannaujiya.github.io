@@ -13,25 +13,92 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
 		<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			img {
-			  border-radius: 50% !important;
-			  width: 70px !important;
-              height: 65px !important;
-			  margin-left: 100px !important;
-              margin-top: 10px !important;
-			}
-			.ulCss {
-			list-style: disc !important; 
-			margin: 0px 0px 2em -27px !important;
-			padding-left: 1em !important;
-            }
-			.liCss {
-			display: -webkit-inline-box;
-            padding: 20px;
-            }
+	<style>
 
-		</style>
+		/* Header Profile Image */
+		.logo img {
+			border-radius: 50% !important;
+			width: 60px !important;
+			height: 60px !important;
+			margin-left: 20px !important;
+			margin-top: 10px !important;
+			object-fit: cover;
+		}
+
+		/* Skills Section */
+		.ulCss {
+			list-style: none !important;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 12px;
+			padding-left: 0 !important;
+			margin-top: 20px !important;
+		}
+
+		.liCss {
+			background: rgba(255,255,255,0.08);
+			border: 1px solid rgba(255,255,255,0.2);
+			padding: 10px 18px;
+			border-radius: 30px;
+			font-size: 14px;
+		}
+
+		/* Banner */
+		#banner .inner {
+			max-width: 950px !important;
+		}
+
+		#banner h1 {
+			font-size: 60px !important;
+			line-height: 1.2 !important;
+			margin-bottom: 25px !important;
+		}
+
+		#banner p {
+			font-size: 18px !important;
+			line-height: 1.8 !important;
+		}
+
+		/* Experience Section */
+		.experience-section p {
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		/* Project Images */
+		.tiles article .image img {
+			border-radius: 0 !important;
+			width: 100% !important;
+			height: auto !important;
+			margin: 0 !important;
+		}
+
+		/* Mobile Responsive */
+		@media screen and (max-width: 768px) {
+
+			#banner h1 {
+				font-size: 36px !important;
+				line-height: 1.3 !important;
+			}
+
+			#banner p {
+				font-size: 15px !important;
+				line-height: 1.7 !important;
+			}
+
+			.logo img {
+				width: 50px !important;
+				height: 50px !important;
+				margin-left: 10px !important;
+			}
+
+			.liCss {
+				font-size: 12px;
+				padding: 8px 14px;
+			}
+		}
+
+	</style>
 	</head>
 	<body class="is-preload">
 
@@ -62,31 +129,42 @@
 					</nav>
 
 				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>
-									Hi, I'm Vivek Kannaujiya, a Tech Lead at Tech Mahindra working with Reliance Industries Limited, 
-									and a Full Stack Engineer with 6.6+ years of experience in designing scalable backend systems, 
-									microservices, and enterprise-grade applications.
-								</h1>
-							</header>
-							<div class="content">
-								<p>
-									<b>
-										Tech Lead at Tech Mahindra | Client: Reliance Industries Limited |
-										Full-Stack Node.js & Python Engineer | Backend & Cloud Enthusiast |
-										6.6+ Years of Experience
-									</b><br>
-                                   Results-driven Full-Stack Developer with 6.6+ years of experience in designing, developing, and optimizing scalable applications.
-								   Adept at building high-performance systems, integrating third-party APIs, and streamlining backend architecture for efficiency and scalability. Passionate about solving complex challenges through analytical thinking, problem-solving, and strategic decision-making in fast-paced, high-growth environments.
-								</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
-								</ul>
-							</div>
+				<section id="banner" class="major">
+					<div class="inner">
+
+						<header class="major">
+							<h1>Vivek Kannaujiya</h1>
+						</header>
+
+						<div class="content">
+							<p>
+								<b>
+									Tech Lead at Tech Mahindra | Client: Reliance Industries Limited
+								</b>
+
+								<br><br>
+
+								Full-Stack Node.js & Python Engineer with 7+ years of experience in designing scalable backend systems,
+								microservices, enterprise applications, and high-performance APIs.
+
+								<br><br>
+
+								Experienced in Node.js, Python, FastAPI, NestJS, PostgreSQL, Oracle DB, MongoDB,
+								microservices architecture, third-party API integrations, and enterprise backend solutions.
+							</p>
+
+							<ul class="actions">
+								<li>
+									<a href="#one" class="button next scrolly">
+										View Experience
+									</a>
+								</li>
+							</ul>
+
 						</div>
-					</section>
+
+					</div>
+				</section>
 
 				<!-- Main -->
 					<div id="main">
@@ -95,7 +173,15 @@
 						<section id="one" class="experience-section">
 							<div class="inner">
 								<header class="major">
-									<h2>Tech Mahindra Ltd (Client: Reliance Industries Limited) - 05/2025 - Present</h2>
+									<h2>
+										<span style="font-weight:700; color:#ffffff;">
+											Tech Mahindra Ltd
+										</span> | Client: <span style="font-weight:700; color:#ffffff;">
+											Reliance Industries Limited
+										</span>
+										<br>
+										<span style="font-size:16px;">Tech Lead | 05/2025 - Present</span>
+									</h2>
 								</header>
 
 								<p>
@@ -169,9 +255,15 @@
 									<li class="liCss">ExpressJs</li>
 									<li class="liCss">Python</li>
 									<li class="liCss">FastAPI</li>
+									
 									<li class="liCss">NestJs</li>
 									<li class="liCss">PostgreSQL</li>
 									<li class="liCss">Oracle DB</li>
+									<li class="liCss">Docker</li>
+									<li class="liCss">Kubernetes</li>
+									<li class="liCss">Redis</li>
+									<li class="liCss">CI/CD Pipeline</li>
+									<li class="liCss">System Design</li>
 									<li class="liCss">Microservices</li>
 									<li class="liCss">TypeScript</li>
 									<li class="liCss">REST APIs</li>
@@ -185,7 +277,7 @@
 									<li class="liCss">NextJs API</li>
 									<li class="liCss">Prisma ORM</li>
 									<li class="liCss">ReactJs</li>
-									<li class="liCss">Web Developemnet</li>
+									<li class="liCss">Web Development</li>
 									<li class="liCss">Material-Design-Theme</li>
 									<li class="liCss">Web API</li>
 									<li class="liCss">SwaggerUI</li>
@@ -197,11 +289,9 @@
 									<li class="liCss">Third-party APIs</li>
 									<li class="liCss">Git & Gitlab and Bitbucket</li>
 									<li class="liCss">Postman</li>
-									<li class="liCss">SoupUi</li>
+									<li class="liCss">SoapUI</li>
 									<li class="liCss">Jira</li>
 									<li class="liCss">Azure DevOps</li>
-									<li class="liCss">Azure DevOps</li>
-									<li class="liCss">Kubernetes K8's</li>
 									<li class="liCss">Application Security - BlackDuck Scan</li>
 								  </ul>    
 							</div>
